@@ -83,7 +83,7 @@ class GraphicsView(QtGui.QGraphicsView):
         scene = QtGui.QGraphicsScene(parent=self)
         width = self._settings["scene_width"]
         height = self._settings["scene_height"]
-        scene.setSceneRect(-(width / 2), -(height / 2), width, height)
+        scene.setSceneRect(-(width / 2), -(height / 2), width + 1000, height + 1000)
         self.setScene(scene)
 
         # set the custom flags for this view
